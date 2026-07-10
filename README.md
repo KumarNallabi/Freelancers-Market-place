@@ -114,6 +114,21 @@ All responses follow `{"success": true/false, "data": ...}`.
 - ✅ Profile Image Upload field on the Freelancer model (`profile_image`,
   accepts `multipart/form-data` on `/freelancers/add/`)
 
+##outputs
+## register page
+<img width="1462" height="877" alt="image" src="https://github.com/user-attachments/assets/c4734588-e799-4a2b-9206-3275da4b1d01" />
+
+## login page
+<img width="1902" height="997" alt="image" src="https://github.com/user-attachments/assets/e516566f-828e-426f-80da-8c49b05fe8d8" />
+
+<img width="1613" height="690" alt="image" src="https://github.com/user-attachments/assets/1ef64fdf-ef6b-4043-9ac5-f877ae727dd2" />
+## home page
+<img width="1911" height="977" alt="image" src="https://github.com/user-attachments/assets/1d3073a8-3139-47c5-a340-2d63cc872837" />
+### bids page
+<img width="1918" height="1007" alt="image" src="https://github.com/user-attachments/assets/28433cf1-e1a2-49d2-9732-0ae65f3cb9ed" />
+### dashboard page
+<img width="1697" height="982" alt="image" src="https://github.com/user-attachments/assets/42295981-b96c-4fad-a8cc-dfbf9194bf40" />
+
 ## Core User Flow (matches Sample Testing Data in the brief)
 
 1. A client registers → posts an "E-Commerce Website" project.
