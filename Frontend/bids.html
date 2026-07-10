@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bids — Ledger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">Ledger <span class="tag">MARKETPLACE</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="bids.html" class="active">Bids</a></li>
+      <li><a href="contracts.html">Contracts</a></li>
+    </ul>
+    <div class="nav-actions" id="nav-actions"></div>
+  </div>
+</nav>
+
+<div class="section-tight">
+  <div class="container">
+    <span class="eyebrow">Module 4</span>
+    <h1>Bids &amp; Proposals</h1>
+    <p class="muted">Freelancers submit proposals here; clients accept or reject them from the same board.</p>
+  </div>
+</div>
+
+<div class="section-tight">
+  <div class="container">
+    <div class="card">
+      <h3>Submit a Proposal</h3>
+      <p class="muted mt-8" style="margin-bottom:16px;font-size:0.85rem">You must be logged in as a Freelancer. Your name is attached automatically.</p>
+      <form id="submit-bid-form">
+        <div class="form-grid">
+          <div class="field full">
+            <label>Project Title</label>
+            <input type="text" id="bid-project-title" name="project_title" placeholder="E-Commerce Website" required>
+          </div>
+          <div class="field">
+            <label>Bid Amount (₹)</label>
+            <input type="number" name="bid_amount" min="0" placeholder="45000" required>
+          </div>
+          <div class="field full">
+            <label>Proposal Description</label>
+            <textarea name="proposal" placeholder="I can complete the project in 25 days." required></textarea>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-24">Submit Bid</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">All proposals</span>
+        <h2>Bid Board</h2>
+      </div>
+    </div>
+    <div class="grid grid-3" id="bids-list">
+      <div class="empty-state">Loading…</div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">Ledger Freelance Marketplace — Academic Project (Django REST + Vanilla JS)</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard — Ledger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">Ledger <span class="tag">MARKETPLACE</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="bids.html">Bids</a></li>
+      <li><a href="contracts.html">Contracts</a></li>
+    </ul>
+    <div class="nav-actions" id="nav-actions"></div>
+  </div>
+</nav>
+
+<div id="dashboard-root">
+  <div class="section-tight">
+    <div class="container">
+      <span class="eyebrow" id="dash-role">Dashboard</span>
+      <h1>Welcome, <span id="dash-name">—</span></h1>
+      <p class="muted">Your profile, activity, and contracts in one place.</p>
+    </div>
+  </div>
+
+  <div class="section-tight">
+    <div class="container">
+      <div class="grid grid-3" id="dash-stats"></div>
+    </div>
+  </div>
+
+  <div class="section-tight">
+    <div class="container">
+      <div class="card">
+        <h3 id="dash-list-1-title">My Activity</h3>
+        <table class="mt-16">
+          <thead><tr><th>ID</th><th>Project</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody id="dash-list-1"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-tight">
+    <div class="container">
+      <div class="card">
+        <h3 id="dash-list-2-title">More Activity</h3>
+        <table class="mt-16">
+          <thead><tr><th>ID</th><th>Project</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody id="dash-list-2"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-tight" id="dash-list-3-wrap">
+    <div class="container">
+      <div class="card">
+        <h3 id="dash-list-3-title">Active Contracts</h3>
+        <table class="mt-16">
+          <thead><tr><th>ID</th><th>Project</th><th>Amount</th><th>Status</th></tr></thead>
+          <tbody id="dash-list-3"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">Ledger Freelance Marketplace — Academic Project (Django REST + Vanilla JS)</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

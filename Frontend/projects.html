@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects — Ledger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">Ledger <span class="tag">MARKETPLACE</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html" class="active">Projects</a></li>
+      <li><a href="bids.html">Bids</a></li>
+      <li><a href="contracts.html">Contracts</a></li>
+    </ul>
+    <div class="nav-actions" id="nav-actions"></div>
+  </div>
+</nav>
+
+<div class="section-tight">
+  <div class="container">
+    <span class="eyebrow">Module 3</span>
+    <h1>Post &amp; Browse Projects</h1>
+    <p class="muted">Clients post work here; freelancers browse, search, and filter before placing a bid.</p>
+  </div>
+</div>
+
+<div class="section-tight">
+  <div class="container">
+    <div class="card">
+      <h3>Post a New Project</h3>
+      <p class="muted mt-8" style="margin-bottom:16px;font-size:0.85rem">You must be logged in as a Client. Your company name is attached automatically.</p>
+      <form id="post-project-form">
+        <div class="form-grid">
+          <div class="field full">
+            <label>Project Title</label>
+            <input type="text" name="project_title" placeholder="E-Commerce Website" required>
+          </div>
+          <div class="field full">
+            <label>Description</label>
+            <textarea name="description" placeholder="Develop a responsive e-commerce platform." required></textarea>
+          </div>
+          <div class="field">
+            <label>Category</label>
+            <input type="text" name="category" placeholder="Web Development" required>
+          </div>
+          <div class="field">
+            <label>Budget (₹)</label>
+            <input type="number" name="budget" min="0" placeholder="50000" required>
+          </div>
+          <div class="field full">
+            <label>Deadline</label>
+            <input type="date" name="deadline" required>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-24">Post Project</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Available now</span>
+        <h2>Browse Projects</h2>
+      </div>
+    </div>
+
+    <div class="card mt-8" style="margin-bottom:24px">
+      <div class="form-grid" style="grid-template-columns: 2fr 1fr 1fr">
+        <div class="field">
+          <label>Search by title</label>
+          <input type="text" id="search-input" placeholder="e.g. E-Commerce">
+        </div>
+        <div class="field">
+          <label>Category</label>
+          <input type="text" id="category-filter" placeholder="Web Development">
+        </div>
+        <div class="field">
+          <label>Status</label>
+          <select id="status-filter">
+            <option value="">All</option>
+            <option value="Open">Open</option>
+            <option value="In Progress">In Progress</option>
+            <option value="Completed">Completed</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="grid grid-3" id="projects-list">
+      <div class="empty-state">Loading…</div>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="container">Ledger Freelance Marketplace — Academic Project (Django REST + Vanilla JS)</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

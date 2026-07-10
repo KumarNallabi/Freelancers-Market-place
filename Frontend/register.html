@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Register — Ledger</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="brand">Ledger <span class="tag">MARKETPLACE</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="bids.html">Bids</a></li>
+      <li><a href="contracts.html">Contracts</a></li>
+    </ul>
+    <div class="nav-actions" id="nav-actions"></div>
+  </div>
+</nav>
+
+<div class="section">
+  <div class="container" style="max-width:640px">
+    <div class="card">
+      <h2>Create your account</h2>
+      <p class="muted mt-8" style="margin-bottom:22px">Register as a freelancer to bid on projects, or as a client to post work.</p>
+
+      <div class="tabs">
+        <button class="tab-btn reg-tab active" data-target="tab-freelancer">Freelancer</button>
+        <button class="tab-btn reg-tab" data-target="tab-client">Client</button>
+      </div>
+
+      <!-- Freelancer Registration -->
+      <div id="tab-freelancer" class="tab-panel active">
+        <form id="freelancer-register-form">
+          <div class="form-grid">
+            <div class="field full">
+              <label>Full Name</label>
+              <input type="text" name="full_name" placeholder="Rahul Sharma" required>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="rahul@gmail.com" required>
+            </div>
+            <div class="field">
+              <label>Phone</label>
+              <input type="tel" name="phone" placeholder="9876543210" required>
+            </div>
+            <div class="field full">
+              <label>Skills</label>
+              <input type="text" name="skills" placeholder="MERN Stack, Django" required>
+            </div>
+            <div class="field">
+              <label>Experience (years)</label>
+              <input type="number" name="experience" min="0" placeholder="3" required>
+            </div>
+            <div class="field">
+              <label>Hourly Rate (₹)</label>
+              <input type="number" name="hourly_rate" min="0" placeholder="20" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block mt-24">Create Freelancer Profile</button>
+        </form>
+      </div>
+
+      <!-- Client Registration -->
+      <div id="tab-client" class="tab-panel">
+        <form id="client-register-form">
+          <div class="form-grid">
+            <div class="field full">
+              <label>Company Name</label>
+              <input type="text" name="company_name" placeholder="Tech Solutions Pvt Ltd" required>
+            </div>
+            <div class="field">
+              <label>Contact Person</label>
+              <input type="text" name="contact_person" placeholder="Anjali Verma" required>
+            </div>
+            <div class="field">
+              <label>Email</label>
+              <input type="email" name="email" placeholder="client@techsolutions.com" required>
+            </div>
+            <div class="field">
+              <label>Phone</label>
+              <input type="tel" name="phone" placeholder="9988776655" required>
+            </div>
+            <div class="field">
+              <label>Location</label>
+              <input type="text" name="location" placeholder="Bangalore" required>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block mt-24">Create Client Account</button>
+        </form>
+      </div>
+
+      <div class="auth-switch">Already have an account? <a href="login.html">Log in</a></div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
